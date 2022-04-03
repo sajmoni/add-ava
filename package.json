@@ -1,0 +1,39 @@
+{
+  "name": "setup-ava",
+  "version": "1.0.0",
+  "description": "Adds ava to a project. It parses `TypeScript` (with `esbuild`) out of the box.",
+  "keywords": [],
+  "homepage": "https://github.com/sajmoni/setup-ava#readme",
+  "bugs": {
+    "url": "https://github.com/sajmoni/setup-ava/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sajmoni/setup-ava.git"
+  },
+  "license": "MIT",
+  "author": "sajmoni",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "ava"
+  },
+  "ava": {
+    "extensions": [
+      "ts"
+    ],
+    "register": [
+      "esbuild-runner/register"
+    ]
+  },
+  "dependencies": {
+    "ava": "4.1.0",
+    "esbuild-runner": "2.2.1",
+    "execa": "6.1.0",
+    "read-pkg": "7.1.0",
+    "sort-package-json": "1.55.0",
+    "tasuku": "1.0.2",
+    "write-pkg": "5.1.0"
+  }
+}

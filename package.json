@@ -1,6 +1,6 @@
 {
-  "name": "setup-ava",
-  "version": "1.0.0",
+  "name": "add-ava",
+  "version": "0.0.1",
   "description": "Adds ava to a project. It parses `TypeScript` (with `esbuild`) out of the box.",
   "keywords": [],
   "homepage": "https://github.com/sajmoni/setup-ava#readme",
@@ -21,7 +21,6 @@
     "go": "preview && npm run test",
     "test": "ava --no-worker-threads"
   },
-  "ava": {},
   "dependencies": {
     "execa": "6.1.0",
     "read-pkg": "7.1.0",

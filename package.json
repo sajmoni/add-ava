@@ -1,6 +1,6 @@
 {
   "name": "add-ava",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Adds ava to a project. It parses `TypeScript` (with `esbuild`) out of the box.",
   "keywords": [],
   "homepage": "https://github.com/sajmoni/add-ava#readme",

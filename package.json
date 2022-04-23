@@ -19,6 +19,7 @@
   "files": [
     "src/"
   ],
+  "prettier": "prettier-config-one",
   "scripts": {
     "start": "node .",
     "go": "preview && npm run test",
@@ -37,6 +38,8 @@
     "esbuild-runner": "2.2.1",
     "fs-extra": "10.0.1",
     "np": "7.6.1",
-    "package-preview": "4.0.0"
+    "package-preview": "4.0.0",
+    "prettier": "2.6.2",
+    "prettier-config-one": "0.0.1"
   }
 }

@@ -1,50 +1,50 @@
-import { execa } from "execa";
-import { readPackage } from "read-pkg";
-import { writePackage } from "write-pkg";
-import sortPackageJson from "sort-package-json";
-import task from "tasuku";
+import { execa } from 'execa'
+import { readPackage } from 'read-pkg'
+import { writePackage } from 'write-pkg'
+import sortPackageJson from 'sort-package-json'
+import task from 'tasuku'
 
 const run = async () => {
   await task.group((task) => [
-    task("Install dependencies", async () => {
-      await execa("npm", [
-        "install",
-        "--save-exact",
-        "ava@4.1.0",
-        "esbuild-runner@2.2.1",
-      ]);
+    task('Install dependencies', async () => {
+      await execa('npm', [
+        'install',
+        '--save-exact',
+        'ava@4.1.0',
+        'esbuild-runner@2.2.1',
+      ])
     }),
-    task("Update package.json", async () => {
-      const packageJson = await readPackage({ normalize: false });
+    task('Update package.json', async () => {
+      const packageJson = await readPackage({ normalize: false })
       await writePackage(
-        "package.json",
+        'package.json',
         sortPackageJson({
           ...packageJson,
           ...(packageJson.scripts
             ? {
                 scripts: {
                   ...packageJson.scripts,
-                  test: "ava",
+                  test: 'ava',
                 },
               }
             : {
                 scripts: {
-                  test: "ava",
+                  test: 'ava',
                 },
               }),
           ava: {
-            register: ["esbuild-runner/register"],
-            extensions: ["ts"],
+            register: ['esbuild-runner/register'],
+            extensions: ['ts'],
           },
-        })
-      );
+        }),
+      )
     }),
-  ]);
-  await task("Done!", () => true);
-};
+  ])
+  await task('Done!', () => true)
+}
 
 const foo = async () => {
-  await run();
-};
+  await run()
+}
 
-foo();
+foo()

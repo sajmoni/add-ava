@@ -45,8 +45,4 @@ const run = async () => {
   await task('Done!', () => true)
 }
 
-const foo = async () => {
-  await run()
-}
-
-foo()
+run()

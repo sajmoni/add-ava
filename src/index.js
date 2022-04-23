@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { execa } from 'execa'
 import { readPackage } from 'read-pkg'
 import { writePackage } from 'write-pkg'

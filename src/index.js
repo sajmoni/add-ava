@@ -35,7 +35,7 @@ const run = async () => {
                 },
               }),
           ava: {
-            register: ['esbuild-runner/register'],
+            require: ['esbuild-runner/register'],
             extensions: ['ts'],
           },
         }),

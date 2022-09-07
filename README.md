@@ -1,8 +1,8 @@
 # add-ava
 
-Adds `ava` to a project. It parses `TypeScript` (with `esbuild`) out of the box.
+Adds [`ava`](https://github.com/avajs/ava) to a project. Enables using it with `TypeScript`.
 
-## Features
+## :sparkles: Features
 
 - Installs `ava` and `esbuild-runner`
 - Adds an `ava` config to `package.json`
@@ -12,5 +12,5 @@ Adds `ava` to a project. It parses `TypeScript` (with `esbuild`) out of the box.
 ## How to use
 
 ```sh
-npx add-ava
+npx add-ava@latest
 ```

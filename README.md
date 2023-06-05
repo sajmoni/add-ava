@@ -1,6 +1,6 @@
 # add-ava
 
-Adds [`ava`](https://github.com/avajs/ava) to a project. Enables using it with `TypeScript`.
+> Adds [`ava`](https://github.com/avajs/ava) to a project. Enables using it with `TypeScript`.
 
 Deprecated. I started using [vitest](https://github.com/vitest-dev/vitest) instead
 
@@ -13,6 +13,6 @@ Deprecated. I started using [vitest](https://github.com/vitest-dev/vitest) inste
 
 ## How to use
 
-```sh
+```console
 npx add-ava@latest
 ```
